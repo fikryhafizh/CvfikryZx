@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        header img {
+            border-radius: 50%; /* Membuat gambar menjadi bulat */
+            width: 150px; /* Menyesuaikan ukuran gambar */
+            height: 150px; /* Menyesuaikan ukuran gambar */
+            object-fit: cover; /* Menjaga gambar tetap terpotong dengan baik */
+            border: 5px solid #fff; /* Menambahkan bingkai putih di sekitar gambar */
+            margin-top: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        /* Container untuk konten utama */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .about, .skills, .projects, .contact {
+            background-color: white;
+            margin: 20px auto;
+            padding: 40px;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skills li {
+            display: inline-block;
+            background-color: #ddd;
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+
+        .projects .project {
+            margin: 20px 0;
+        }
+
+        .project h3 {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Media Query untuk layar kecil */
+        @media (max-width: 768px) {
+            header {
+                padding: 20px 15px;
+            }
+            header img {
+                width: 120px;
+                height: 120px;
+            }
+            nav a {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            .about, .skills, .projects, .contact {
+                width: 95%;
+                padding: 30px;
+            }
+        }
+
+        /* Media Query untuk perangkat lebih kecil seperti ponsel */
+        @media (max-width: 480px) {
+            header {
+                padding: 15px;
+            }
+            header img {
+                width: 100px;
+                height: 100px;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+                width: 100%;
+                text-align: center;
+            }
+            .skills li {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Fikry Hafizh</h1>
+        <img src="foto/1.png" alt="foto1">
+        <p>Desainer dan Pengembang Web</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">Tentang Saya</a>
+        <a href="#skills">Keterampilan</a>
+        <a href="#projects">Proyek</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- About Me Section -->
+        <section id="about" class="about">
+            <h2>Tentang Saya</h2>
+            <p>Halo, saya adalah seorang pengembang web yang berfokus pada desain dan pengembangan antarmuka pengguna. Saya memiliki pengalaman dalam HTML, CSS, JavaScript, dan berbagai framework modern.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <h2>Keterampilan</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2>Proyek</h2>
+            <div class="project">
+                <h3>Proyek 1: Website Portofolio</h3>
+                <p>Sebuah website portofolio pribadi yang dirancang untuk menampilkan keterampilan dan proyek saya.</p>
+            </div>
+            <div class="project">
+                <h3>Proyek 2: Aplikasi To-Do List</h3>
+                <p>Aplikasi to-do list sederhana yang dibangun dengan React dan menyimpan data ke dalam local storage.</p>
+            </div>
+            <div class="project">
+                <h3>Proyek 3: E-commerce Website</h3>
+                <p>Sebuah website e-commerce yang dibangun dengan Node.js dan MongoDB, dengan fitur keranjang belanja dan pembayaran online.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Kontak</h2>
+            <p>Jika Anda tertarik untuk bekerja sama atau memiliki pertanyaan, silakan hubungi saya melalui email di: <a href="mailto:email@domain.com">email@domain.com</a></p>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Portofolio Saya | Dibuat Oleh Fikry Hafizh</p>
+    </footer>
+</body>
+</html>
